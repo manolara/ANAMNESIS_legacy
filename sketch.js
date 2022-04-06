@@ -35,9 +35,12 @@ var changePos;
 let releaseNo=0;
 
 function setup() {
-  
+  createCanvas(windowWidth, windowHeight);
+  background('#ffb8b8')
   let begin = createButton("  START  ");
   begin.id('start')
+  begin.position(width/2,height/3)
+  
   
   begin.mousePressed(() => {
     
@@ -174,7 +177,10 @@ function setup2() {
   let drive = new Tone.Distortion(0.3).connect(postFilter);
   mySynth.connect(drive);
 
-  createCanvas(600, 400);
+  let cnv=createCanvas(600, 400);
+  cnv.position(windowWidth/1.9, windowHeight/4)
+  
+  
   setMatrix();
 
   strokeWeight(2);
