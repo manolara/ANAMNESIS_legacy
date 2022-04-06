@@ -37,11 +37,12 @@ let releaseNo=0;
 function setup() {
   
   let begin = createButton("  START  ");
+  begin.id('start')
   
   begin.mousePressed(() => {
     
     begin.hide();
-    releaseNo=1;
+    releaseNo=0;
     setup2();
     
   });}
