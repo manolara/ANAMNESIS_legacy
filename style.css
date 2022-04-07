@@ -77,3 +77,22 @@ canvas {
 .buttons:hover {
   box-shadow: inset 6.2rem 0 0 0 #f8abab;
 }
+
+#water {
+  position: relative;
+  left: 30px;
+  border: 1.5px solid #73ad21;
+}
+
+#cassette {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+#water2 {
+  position: relative;
+  left: -250px;
+  top: 280px;
+  border: 1.5px solid #f5c990;
+}
