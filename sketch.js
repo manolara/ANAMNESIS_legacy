@@ -61,14 +61,16 @@ function setup2() {
   curColor = lightBlue;
 
   let I = createButton("  I  ");
-  I.position(10, 450);
+  I.position(windowWidth/1.9, windowHeight/4+425);
+  I.class('buttons')
   I.mousePressed(() => {
     bassNote = 1;
     curColor = lightBlue;
     setMatrix();
   });
   let II = createButton("  II  ");
-  II.position(30, 450);
+  II.position(windowWidth/1.9+20, windowHeight/4+425);
+  II.class('buttons')
   II.mousePressed(() => {
     bassNote = 2;
     curColor = darkBlue;
@@ -76,28 +78,31 @@ function setup2() {
   });
 
   let IV = createButton("  IV  ");
-  IV.position(60, 450);
+  IV.position(windowWidth/1.9+50, windowHeight/4+425);
+  IV.class('buttons')
   IV.mousePressed(() => {
     bassNote = 4;
     curColor = purple;
     setMatrix();
   });
   let V = createButton("  V  ");
-  V.position(90, 450);
+  V.position(windowWidth/1.9+80, windowHeight/4+425);
+  V.class('buttons')
   V.mousePressed(() => {
     bassNote = 5;
     curColor = orange;
     setMatrix();
   });
   let VI = createButton("  VI  ");
-  VI.position(120, 450);
+  VI.position(windowWidth/1.9+107, windowHeight/4+425);
+  VI.class('buttons')
   VI.mousePressed(() => {
     bassNote = 6;
     curColor = green;
     setMatrix();
   });
   let gridToggle = createButton("Grid on OFF");
-  gridToggle.position(550, 450);
+  gridToggle.position(windowWidth/1.9+516, windowHeight/4+425);
   gridToggle.mousePressed(() => {
     gridOn = !gridOn;
     console.log(gridOn);
