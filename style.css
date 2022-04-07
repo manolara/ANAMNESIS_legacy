@@ -1,3 +1,9 @@
+* {
+  background: #bcdee4;
+  background: #8bb6da;
+  background: #b4ddff;
+}
+
 html,
 body {
   margin: 0;
@@ -12,6 +18,7 @@ canvas {
   cursor: pointer;
   width: 5rem;
   height: 3rem;
+
   background-color: #ffb8b8;
   border: none;
   border-radius: 8px;
@@ -29,4 +36,18 @@ canvas {
 
 #start:hover {
   box-shadow: inset 5rem 0 0 0 #9cdab0;
+}
+
+.title {
+  margin: 0;
+  margin-top: 1%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: center;
+  font-size: 10vmin;
+  font-family: "Poppins", sans-serif;
+  /* font-style: italic; */
 }

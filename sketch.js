@@ -28,7 +28,7 @@ let bassNote = 1;
 
 let nextColor;
 var curColor;
-var gridOn = true;
+var gridOn = false;
 
 var xPos=1;
 var changePos;
@@ -39,7 +39,7 @@ function setup() {
   background('#ffb8b8')
   let begin = createButton("  START  ");
   begin.id('start')
-  begin.position(width/2,height/3)
+  begin.position(windowWidth/2,height/3)
   
   
   begin.mousePressed(() => {
@@ -51,9 +51,11 @@ function setup() {
   });}
 
 function setup2() {
+  //color assignment
   const lightBlue = color("#bde0fe");
-  const darkBlue = color("#0081a7");
+  const darkBlue = color("#3297b6");
   const green = color("#bee1e6");
+  //const green = color("#bcdee4");
   const orange = color(254, 200, 154);
   const purple = color("#d5c6e0");
   curColor = lightBlue;
@@ -179,6 +181,7 @@ function setup2() {
 
   let cnv=createCanvas(600, 400);
   cnv.position(windowWidth/1.9, windowHeight/4)
+  cnv.style("border: 3px solid #8bb6da;;")
   
   
   setMatrix();
