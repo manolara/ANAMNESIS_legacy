@@ -69,7 +69,7 @@ function setup2() {
     setMatrix();
   });
   let II = createButton("  II  ");
-  II.position(windowWidth/1.9+20, windowHeight/4+425);
+  II.position(windowWidth/1.9+22, windowHeight/4+425);
   II.class('buttons')
   II.mousePressed(() => {
     bassNote = 2;
@@ -78,7 +78,7 @@ function setup2() {
   });
 
   let IV = createButton("  IV  ");
-  IV.position(windowWidth/1.9+50, windowHeight/4+425);
+  IV.position(windowWidth/1.9+45+6, windowHeight/4+425);
   IV.class('buttons')
   IV.mousePressed(() => {
     bassNote = 4;
@@ -86,7 +86,7 @@ function setup2() {
     setMatrix();
   });
   let V = createButton("  V  ");
-  V.position(windowWidth/1.9+80, windowHeight/4+425);
+  V.position(windowWidth/1.9+80+10, windowHeight/4+425);
   V.class('buttons')
   V.mousePressed(() => {
     bassNote = 5;
@@ -94,7 +94,7 @@ function setup2() {
     setMatrix();
   });
   let VI = createButton("  VI  ");
-  VI.position(windowWidth/1.9+107, windowHeight/4+425);
+  VI.position(windowWidth/1.9+107+14, windowHeight/4+425);
   VI.class('buttons')
   VI.mousePressed(() => {
     bassNote = 6;
@@ -102,7 +102,9 @@ function setup2() {
     setMatrix();
   });
   let gridToggle = createButton("Grid on OFF");
-  gridToggle.position(windowWidth/1.9+516, windowHeight/4+425);
+  gridToggle.position(windowWidth/1.9+508, windowHeight/4+425);
+  gridToggle.class('buttons')
+  gridToggle.style('font-size: 15px;')
   gridToggle.mousePressed(() => {
     gridOn = !gridOn;
     console.log(gridOn);

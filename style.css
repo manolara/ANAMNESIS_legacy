@@ -70,8 +70,10 @@ canvas {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  display: flex;
+  justify-content: space-around;
 }
 
 .buttons:hover {
-  box-shadow: inset 5rem 0 0 0 #f8abab;
+  box-shadow: inset 6rem 0 0 0 #f8abab;
 }
